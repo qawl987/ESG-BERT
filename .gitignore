@@ -1,0 +1,8 @@
+*.pdf
+esgCsv/
+4_apple_1_72.csv
+logs/
+__pycache__/
+unuse_file/
+bert-model/pytorch_model.bin
+model_store/
