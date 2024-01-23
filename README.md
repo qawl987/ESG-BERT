@@ -25,3 +25,9 @@
 ## 分析
 蒐集完模型與詞頻的數據後發現在詞頻輸出為None且文字字數少於十個時，esg-bert容易輸出無意義label，因此可以將該句移除csv中，即使用詞頻幫助我們進一步優化esg-bert的結果
 ![image](https://user-images.githubusercontent.com/62208230/228411149-8c63645f-e109-4175-b59f-2b7e87eb34a9.png)
+
+## 運行
+main.ipynb >> pdf >> text >> paragraph.txt >> ESGBERT >> output.txt >> csv
+1. 先透過pdfminer將pdf轉成文字
+2. 經過https://github.com/mukut03/ESG-BERT 模型產生預測的esg label
+3. 最後一個cell將產生的output.txt與轉換出的paragraph一起產生帶有label標籤的csv
